@@ -1,4 +1,4 @@
-package main;
+package dicecup;
 
 public class DiceCup {
 
