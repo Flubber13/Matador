@@ -9,7 +9,6 @@ public class Fleet extends AbstractOwnable {
 	
 	public Fleet(int id) {
 		super(id);
-		owner=null; // Skal være brættet/banken
 	}
 	
 	public int getRent(int id) {
