@@ -1,4 +1,4 @@
-package main;
+package fields;
 
 public class Refuge extends AbstractFields {
 

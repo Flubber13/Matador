@@ -1,6 +1,5 @@
 package fields;
 
-import main.AbstractOwnable;
 import main.Player;
 
 public class Fleet extends AbstractOwnable {
