@@ -1,4 +1,7 @@
-package main;
+package properties;
+
+import main.AbstractOwnable;
+import main.Player;
 
 public class Fleet extends AbstractOwnable {
 	
