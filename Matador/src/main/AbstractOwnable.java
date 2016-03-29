@@ -1,5 +1,7 @@
 package main;
 
-public class AbstractOwnable extends Fields {
+public abstract class AbstractOwnable extends AbstractFields {
+	
+	public abstract int getRent(int id);
 
 }
