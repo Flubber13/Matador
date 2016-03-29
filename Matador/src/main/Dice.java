@@ -10,9 +10,7 @@ public class Dice {
 	}
 
 	private void setLastRoll(int i) {
-		if (0<i && i<6) {
 			i = lastRoll;
-		}
 	}
 
 	public int getLastRoll() {
