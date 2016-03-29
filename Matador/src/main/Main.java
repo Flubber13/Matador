@@ -10,7 +10,7 @@ public class Main {
 		// "Configure Buid Path" --> Vælg fanen "Order and Export" og sæt flueben i "SRE System Library".
 		// 
 		// Hvis Eclipse brokker sig over din main pakke, så højreklik på src mappen, og klik på "Build Path" -->
-		// "Use as Source folder" (hvis den ikke er der er det fint).
+		// "Use as Source folder" (hvis den ikke er der, er det fint).
 		// Genstart Eclipse
 	}
 
