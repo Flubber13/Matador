@@ -13,5 +13,4 @@ public class DiceCup {
 		return die1.getLastRoll() == die2.getLastRoll();
 	}
 
-
 }
