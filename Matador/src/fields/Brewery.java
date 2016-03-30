@@ -2,12 +2,9 @@ package fields;
 
 import main.Player;
 
-public class Fleet extends AbstractFields implements Ownable {
+public class Brewery extends AbstractFields implements Ownable {
 	
-	private final int BASERENT = 500;
-	private Player owner;
-	
-	public Fleet(int id) {
+	public Brewery(int id) {
 		super(id);
 	}
 
