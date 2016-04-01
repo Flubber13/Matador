@@ -4,19 +4,23 @@ public class Player {
 	
 	private String name;
 	private static int player_id = 1; 	//--> Jeg forestiller mig, at vi i databasen laver 2 nuller foran,
-	private int numberFleetsOwned = 0;	//    så det kommer til at hedde 001, 002, osv..
+	private int numFleetsOwned = -1;	//    så det kommer til at hedde 001, 002, osv..
 	private int numBreweriesOwned = 0;
 	
 	public Player(String name) {
 		this.name=name;
-		this.numberFleetsOwned=numberFleetsOwned;
+		this.numFleetsOwned=numFleetsOwned;
 		this.numBreweriesOwned=numBreweriesOwned;
 //		createPlayer();
 		player_id++;
 	}
 	
 	public int getFleets() {
-		return numberFleetsOwned;
+		return numFleetsOwned;
+	}
+	
+	public void setFleets() {
+		this.numFleetsOwned++;
 	}
 	
 	private void createPlayer(Player player) {

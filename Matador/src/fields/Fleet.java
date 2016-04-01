@@ -9,30 +9,24 @@ public class Fleet extends AbstractFields implements Ownable {
 	
 	public Fleet(int id) {
 		super(id);
+		this.owner=null;
 	}
 
-	@Override
 	public Player getOwner() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.owner;
 	}
 
-	@Override
 	public void setOwner(Player owner) {
-		// TODO Auto-generated method stub
-		
+		this.owner=owner;
+		owner.setFleets();
 	}
 
-	@Override
 	public int getRent() {
-		// TODO Auto-generated method stub
-		return 0;
+		return (int) Math.pow(2, owner.getFleets())*BASERENT;
 	}
 
-	@Override
 	public boolean isOwned() {
-		// TODO Auto-generated method stub
-		return false;
+		return this.owner==null;
 	}
 
 }
