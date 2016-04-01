@@ -12,5 +12,9 @@ public class DiceCup {
 	public boolean hasPair() {
 		return die1.getLastRoll() == die2.getLastRoll();
 	}
+	
+	public int getLastRoll() {
+		return die1.getLastRoll() + die2.getLastRoll();
+	}
 
 }

@@ -1,35 +1,36 @@
 package fields;
 
+import dicecup.DiceCup;
 import main.Player;
 
 public class Brewery extends AbstractFields implements Ownable {
 	
+	private Player owner;
+	private DiceCup dicecup;
+	
 	public Brewery(int id) {
 		super(id);
+		this.owner = null;
 	}
 
 	@Override
 	public Player getOwner() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.owner;
 	}
 
 	@Override
 	public void setOwner(Player owner) {
-		// TODO Auto-generated method stub
-		
+		this.owner = owner;
 	}
 
 	@Override
 	public int getRent() {
-		// TODO Auto-generated method stub
-		return 0;
+		return owner.getBreweries()*dicecup.getLastRoll()*100;
 	}
 
 	@Override
 	public boolean isOwned() {
-		// TODO Auto-generated method stub
-		return false;
+		return this.owner == null;
 	}
 
 }

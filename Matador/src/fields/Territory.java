@@ -4,20 +4,21 @@ import main.Player;
 
 public class Territory extends AbstractFields implements Ownable {
 	
+	private Player owner;
+	
 	public Territory(int id) {
 		super(id);
+		this.owner = null;
 	}
 
 	@Override
 	public Player getOwner() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.owner;
 	}
 
 	@Override
 	public void setOwner(Player owner) {
-		// TODO Auto-generated method stub
-		
+		this.owner = owner;
 	}
 
 	@Override
@@ -28,8 +29,7 @@ public class Territory extends AbstractFields implements Ownable {
 
 	@Override
 	public boolean isOwned() {
-		// TODO Auto-generated method stub
-		return false;
+		return this.owner == null;
 	}
 
 }
