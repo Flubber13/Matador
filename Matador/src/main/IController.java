@@ -23,6 +23,6 @@ public interface IController {
 	
 	
 	// Spil spillet
-	void runGame(Player[] players);
+	void runGame();
 
 }

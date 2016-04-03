@@ -4,6 +4,12 @@ import desktop_codebehind.Car;
 import desktop_resources.GUI;
 
 public class Controller implements IController {
+	
+	private Player[] players;
+	
+	public Controller() {
+		// Laver spillerne og en database
+	}
 		
 	public String getUserString(String message) {
 		return GUI.getUserString(message);
@@ -37,7 +43,7 @@ public class Controller implements IController {
 		return GUI.getUserLeftButtonPressed(message, trueButton, falseButton);
 	}
 	
-	public void runGame(Player[] players) {
+	public void runGame() {
 		// Spiller spillet
 		for (int i = 0; i < players.length; i++) {
 			if (players[i].isAlive()) {
