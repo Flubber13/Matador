@@ -37,5 +37,14 @@ public class Controller implements IController {
 		return GUI.getUserLeftButtonPressed(message, trueButton, falseButton);
 	}
 	
+	public void runGame(Player[] players) {
+		// Spiller spillet
+		for (int i = 0; i < players.length; i++) {
+			if (players[i].isAlive()) {
+				players[i].turn();
+			}
+		}
+	}
+	
 
 }

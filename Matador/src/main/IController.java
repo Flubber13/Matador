@@ -16,5 +16,13 @@ public interface IController {
 	// GUI relateret
 	void addPlayer(String name, int balance);
 	void addPlayer(String name, int balance, Car car);
+	
+	
+	
+	
+	
+	
+	// Spil spillet
+	void runGame(Player[] players);
 
 }
