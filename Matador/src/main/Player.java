@@ -3,8 +3,9 @@ package main;
 public class Player {
 	
 	private String name;
-	private int player_id; 	//--> Jeg forestiller mig, at vi i databasen laver 2 nuller foran,
-	private static int numOfPlayers = 0;	private int numFleetsOwned;	//    så det kommer til at hedde 001, 002, osv..
+	private int player_id; 							//--> Jeg forestiller mig, at vi i databasen laver 2 nuller foran,
+	private static int numOfPlayers = 0;			//    så det kommer til at hedde 001, 002, osv..
+	private int numFleetsOwned;
 	private int numBreweriesOwned;
 	private boolean isAlive;
 	

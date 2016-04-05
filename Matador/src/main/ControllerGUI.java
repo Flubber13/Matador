@@ -6,10 +6,6 @@ import desktop_resources.GUI;
 public class ControllerGUI implements IControllerUI {
 	
 	private Player[] players;
-	
-	public ControllerGUI() {
-		// Laver spillerne og en database
-	}
 		
 	public String getUserString(String message) {
 		return GUI.getUserString(message);
@@ -41,15 +37,6 @@ public class ControllerGUI implements IControllerUI {
 
 	public boolean getUserLeftButtonPressed(String message, String trueButton, String falseButton) {
 		return GUI.getUserLeftButtonPressed(message, trueButton, falseButton);
-	}
-	
-	public void runGame() {
-		// Spiller spillet
-		for (int i = 0; i < players.length; i++) {
-			if (players[i].isAlive()) {
-				players[i].turn();
-			}
-		}
 	}
 	
 

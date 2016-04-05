@@ -17,12 +17,4 @@ public interface IControllerUI {
 	void addPlayer(String name, int balance);
 	void addPlayer(String name, int balance, Car car);
 	
-	
-	
-	
-	
-	
-	// Spil spillet
-	void runGame();
-
 }
