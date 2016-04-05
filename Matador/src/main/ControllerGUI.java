@@ -3,11 +3,11 @@ package main;
 import desktop_codebehind.Car;
 import desktop_resources.GUI;
 
-public class Controller implements IController {
+public class ControllerGUI implements IControllerUI {
 	
 	private Player[] players;
 	
-	public Controller() {
+	public ControllerGUI() {
 		// Laver spillerne og en database
 	}
 		

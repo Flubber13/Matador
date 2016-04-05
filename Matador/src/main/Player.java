@@ -3,17 +3,18 @@ package main;
 public class Player {
 	
 	private String name;
-	private int player_id = 1; 	//--> Jeg forestiller mig, at vi i databasen laver 2 nuller foran,
-	private int numFleetsOwned;	//    så det kommer til at hedde 001, 002, osv..
+	private int player_id; 	//--> Jeg forestiller mig, at vi i databasen laver 2 nuller foran,
+	private static int numOfPlayers = 0;	private int numFleetsOwned;	//    så det kommer til at hedde 001, 002, osv..
 	private int numBreweriesOwned;
 	private boolean isAlive;
 	
 	public Player(String name) {
 		this.name=name;
-		this.numFleetsOwned = -1;
+		this.numFleetsOwned = 0;
 		this.numBreweriesOwned = 0;
 //		createPlayer();
-		player_id++;
+		numOfPlayers++;
+		this.player_id = numOfPlayers;
 		this.isAlive=true;
 	}
 	

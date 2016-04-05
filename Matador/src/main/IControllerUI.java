@@ -2,7 +2,7 @@ package main;
 
 import desktop_codebehind.Car;
 
-public interface IController {
+public interface IControllerUI {
 	
 	// User interference
 	
