@@ -2,6 +2,16 @@ package main;
 
 public class ChanceCard {
 
-	// lav kø
+	String text; 
+	ChanceCard(String text){
+		this.text = text;
+	}
+
 	
+	public void shuffle(){
+		//TO DO
+	}
+	
+	
+	// lav kø
 }
