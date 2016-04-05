@@ -13,7 +13,7 @@ public class Account {
 		return this.balance;
 	}
 	
-	public void updateBalance(int newBalance) {
+	public void updateBalance(int newBalance) { // Skal laves om
 		this.balance = newBalance;
 	}
 

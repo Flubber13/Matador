@@ -60,7 +60,7 @@ public class Player {
 		return account.getBalance();
 	}
 	
-	public boolean updateBalance(int newBalance) {
+	public boolean updateBalance(int newBalance) { // Skal laves om
 		if (newBalance<0) {
 			return false;
 		}
