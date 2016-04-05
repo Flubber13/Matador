@@ -1,4 +1,4 @@
-package fields;
+package main;
 
 public class GameBoard {
 
