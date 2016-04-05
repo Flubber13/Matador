@@ -21,7 +21,7 @@ public class DiceCup {
 	public int getLastRoll() {
 		return die1.getLastRoll() + die2.getLastRoll();
 		
-		//testin 1 2 3 4 5 
+		//testin 1 2 3 4 5 6
 		
 		
 	}
