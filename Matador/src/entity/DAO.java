@@ -2,7 +2,7 @@ package entity;
 
 public interface DAO {
 	
-	// Data Acces object - setters
+	// Data Acces object - getters
 	
 	int getPosition();
 	int getBalance();
