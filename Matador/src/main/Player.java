@@ -9,6 +9,7 @@ public class Player {
 	private int numFleetsOwned;
 	private int numBreweriesOwned;
 	private boolean isAlive;
+	private Account account;
 	
 	public Player(String name) {
 		this.name=name;
@@ -19,6 +20,7 @@ public class Player {
 		numOfPlayers++;
 		this.player_id = numOfPlayers;
 		this.isAlive=true;
+		this.account = new Account();
 	}
 	
 	public int getFleets() {
@@ -52,6 +54,20 @@ public class Player {
 
 	public void setPosition(int position) {
 		this.position = position;
+	}
+	
+	public int getBalance() {
+		return account.getBalance();
+	}
+	
+	public boolean updateBalance(int newBalance) {
+		if (newBalance<0) {
+			return false;
+		}
+		else {
+			account.updateBalance(newBalance);
+		}
+		return true;
 	}
 	
 
