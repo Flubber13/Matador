@@ -6,7 +6,7 @@ public class Account {
 	
 	
 	public Account() {
-		this.balance = 0; //Hent fra DB
+		this.balance = 30000;
 	}
 	
 	public int getBalance() {
