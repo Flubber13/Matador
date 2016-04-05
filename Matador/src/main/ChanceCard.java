@@ -7,11 +7,7 @@ public class ChanceCard {
 		this.text = text;
 	}
 
-	
-	public void shuffle(){
-		//TO DO
-	}
-	
+
 	
 	// lav kø
 }
