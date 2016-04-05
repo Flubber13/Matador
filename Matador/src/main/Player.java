@@ -4,6 +4,7 @@ public class Player {
 	
 	private String name;
 	private int player_id; 							//--> Jeg forestiller mig, at vi i databasen laver 2 nuller foran,
+	private int position;
 	private static int numOfPlayers = 0;			//    så det kommer til at hedde 001, 002, osv..
 	private int numFleetsOwned;
 	private int numBreweriesOwned;
@@ -13,6 +14,7 @@ public class Player {
 		this.name=name;
 		this.numFleetsOwned = 0;
 		this.numBreweriesOwned = 0;
+		this.position = 0;
 //		createPlayer();
 		numOfPlayers++;
 		this.player_id = numOfPlayers;
@@ -42,6 +44,14 @@ public class Player {
 	
 	public boolean isAlive() {
 		return this.isAlive;
+	}
+
+	public int getPosition() {
+		return position;
+	}
+
+	public void setPosition(int position) {
+		this.position = position;
 	}
 	
 
