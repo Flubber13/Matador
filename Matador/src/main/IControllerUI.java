@@ -16,5 +16,6 @@ public interface IControllerUI {
 	// GUI relateret
 	void addPlayer(String name, int balance);
 	void addPlayer(String name, int balance, Car car);
+	void showMessage(String message);
 	
 }

@@ -38,6 +38,10 @@ public class ControllerGUI implements IControllerUI {
 	public boolean getUserLeftButtonPressed(String message, String trueButton, String falseButton) {
 		return GUI.getUserLeftButtonPressed(message, trueButton, falseButton);
 	}
+
+	public void showMessage(String message) {
+		GUI.showMessage(message);
+	}
 	
 
 }

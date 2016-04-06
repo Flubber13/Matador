@@ -26,7 +26,7 @@ public class Texts {
 		try {
 			in = new BufferedReader(new FileReader(file));
 		} catch (IOException e) {
-			// Hvad skal der ske?
+			c.showMessage("Something went wrong, please restart the game");
 		}
 	}
 
@@ -35,7 +35,7 @@ public class Texts {
 		try {
 			strings = in.readLine().split(";");
 		} catch (IOException e) {
-			// Hvad skal der ske?
+			c.showMessage("Something went wrong, please restart the game");
 		}
 		return strings;
 	}
@@ -43,7 +43,7 @@ public class Texts {
 		try {
 			if (in!=null)in.close();
 		} catch (IOException e) {
-			// Hvad skal der ske?
+			c.showMessage("Something went wrong, please restart the game");
 		}
 	}
 
