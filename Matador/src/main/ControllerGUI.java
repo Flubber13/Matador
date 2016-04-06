@@ -42,6 +42,10 @@ public class ControllerGUI implements IControllerUI {
 	public void showMessage(String message) {
 		GUI.showMessage(message);
 	}
+
+	public void closeGUI() {
+		GUI.close();
+	}
 	
 
 }

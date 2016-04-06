@@ -9,7 +9,6 @@ import main.ControllerGUI;
 public class Texts {
 
 	private BufferedReader in;
-	private enum Sprog {Dansk, Engelsk};
 	private String valgtSprog;
 	private ControllerGUI c = new ControllerGUI();
 
@@ -17,7 +16,7 @@ public class Texts {
 		valgtSprog = c.getUserSelection("Choose your language", "Dansk", "English");
 	}
 
-	public void openFile(){
+	public void openFile() {
 		String file = "Dansk.txt";
 
 		if (this.valgtSprog.equals("English"))
@@ -30,16 +29,18 @@ public class Texts {
 		}
 	}
 
-	public String[] readStrings(){
+	public String[] readStrings() {
 		String[] strings = null;
+		
 		try {
 			strings = in.readLine().split(";");
 		} catch (IOException e) {
 			c.showMessage("Something went wrong, please restart the game");
 		}
+		
 		return strings;
 	}
-	public void closeFile(){
+	public void closeFile() {
 		try {
 			if (in!=null)in.close();
 		} catch (IOException e) {
