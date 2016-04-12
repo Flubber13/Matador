@@ -1,12 +1,30 @@
 package entity;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import main.Player;
+
 public class SQL implements DAO, DTO {
+	
+	private Connection myCon;
+	private Statement myStmt;
+	private ResultSet myRs;
+	
+	public SQL() throws SQLException {
+		this.myCon = DriverManager.getConnection("jdbc:mysql://localhost:3306/Matador","","");
+		this.myStmt = myCon.createStatement();
+	}
 
 	
 	// >>>> Data acces objects <<<< //
 	
-	public int getPosition() {
-		// TODO Auto-generated method stub
+	public int getPosition(Player player) throws SQLException { 
+		myRs = myStmt.executeQuery("Select position from player where player_id = '"+player.getPlayerID()+"'");
+		
 		return 0;
 	}
 

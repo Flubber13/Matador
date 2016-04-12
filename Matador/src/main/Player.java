@@ -23,6 +23,10 @@ public class Player {
 		this.account = new Account();
 	}
 	
+	public int getPlayerID() {
+		return this.player_id;
+	}
+	
 	public int getFleets() {
 		return numFleetsOwned;
 	}

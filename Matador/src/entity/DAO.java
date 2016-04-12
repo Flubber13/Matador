@@ -1,10 +1,14 @@
 package entity;
 
+import java.sql.SQLException;
+
+import main.Player;
+
 public interface DAO {
 	
 	// Data Acces object - getters
 	
-	int getPosition();
+	int getPosition(Player player) throws SQLException;
 	int getBalance();
 	int getJailTime();
 	int getCardId();
