@@ -47,6 +47,6 @@ public class Texts {
 			c.showMessage("Something went wrong, please restart the game");
 		}
 	}
-//test
+
 
 }
