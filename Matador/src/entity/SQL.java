@@ -11,21 +11,19 @@ import main.Player;
 public class SQL implements DAO, DTO {
 	
 	private Connection myCon;
-	private Statement myStmt;
-	private ResultSet myRs;
-	
+
 	public SQL() throws SQLException {
-		this.myCon = DriverManager.getConnection("jdbc:mysql://localhost:3306/Matador","","");
-		this.myStmt = myCon.createStatement();
+		myCon = DriverManager.getConnection("jdbc:mysql://localhost/Matador","root","");
 	}
 
 	
 	// >>>> Data acces objects <<<< //
 	
 	public int getPosition(Player player) throws SQLException { 
-		myRs = myStmt.executeQuery("Select position from player where player_id = '"+player.getPlayerID()+"'");
-		
-		return 0;
+		Statement stmt = myCon.createStatement();
+		ResultSet rs = stmt.executeQuery("Select position from player where player_id = '"+player.getPlayerID()+"'");
+		rs.next();
+		return rs.getInt(1);
 	}
 
 	public int getBalance() {
@@ -96,10 +94,17 @@ public class SQL implements DAO, DTO {
 	
 	// >>> Data transfer objects <<<< //
 	
-	public void createPlayer(){
-		// TODO
+	public void createPlayer(int id, int vId, int aId, String name, int position, 
+			int jailTime, boolean active, String vColour, String vType)throws SQLException{
+		
+		Statement stmt = myCon.createStatement();
+		ResultSet rs =stmt.executeQuery(
+			"insert into bank values(" + aId + ",30000);" +
+			"insert into vehicle values(" +vId+ "," +vColour+", "+vType+");" +
+			"insert into player values(" +id+ ", "+vId+","+ aId +","+name+ ","+position+",-1,TRUE);"
+		);
+		rs.next();
 	}
-	
 	public void updatePosition() {
 		// TODO Auto-generated method stub
 
