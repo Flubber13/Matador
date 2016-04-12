@@ -4,6 +4,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		Ω¬|∂ƒ‹cxlv
+		
 		// Det virker nu!!
 
 		// Giver dit Eclipse en fejl, så højreklik på Matador projektet og klik på "Build Path" -->
