@@ -90,27 +90,22 @@ public class SQL implements DAO, DTO {
 
 	public void setCardPosition() {
 		// TODO Auto-generated method stub
-
 	}
 
 	public void setFieldId() {
 		// TODO Auto-generated method stub
-
 	}
 
 	public void setHouseCount() {
 		// TODO Auto-generated method stub
-
 	}
 
 	public void buildHotel() {
 		// TODO Auto-generated method stub
-
 	}
 
 	public void mortgage() {
 		// TODO Auto-generated method stub
-
 	}
 
 	public void setVehicleID() {
