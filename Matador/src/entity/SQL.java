@@ -2,6 +2,9 @@ package entity;
 
 public class SQL implements DAO, DTO {
 
+	
+	// >>>> Data acces objects <<<< //
+	
 	public int getPosition() {
 		// TODO Auto-generated method stub
 		return 0;
@@ -73,7 +76,7 @@ public class SQL implements DAO, DTO {
 	
 	
 	
-	// ---- Data transfer objects
+	// >>> Data transfer objects <<<< //
 	
 	public void createPlayer(){
 		// TODO
