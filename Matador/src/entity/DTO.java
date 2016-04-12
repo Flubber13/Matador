@@ -3,7 +3,7 @@ package entity;
 public interface DTO {
 	
 	// Data Transfer Objekt - Setters
-	
+	void createPlayer();
 	void updatePosition();
 	void setBalance();
 	void setJailTime();
