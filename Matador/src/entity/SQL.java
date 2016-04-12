@@ -68,6 +68,17 @@ public class SQL implements DAO, DTO {
 		return 0;
 	} 
 
+	
+	
+	
+	
+	
+	// ---- Data transfer objects
+	
+	public void createPlayer(){
+		// TODO
+	}
+	
 	public void updatePosition() {
 		// TODO Auto-generated method stub
 
